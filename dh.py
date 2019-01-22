@@ -73,7 +73,7 @@ def Encrypt_text(text):
 print('''
   Choose :
   [1] Encrypt text
-  [2] decode text (For this Session only)
+  [2] Decrypt text (For this Session only)
   [3] List all Encrypted texts
   [4] Exit''')
 while True:
@@ -83,7 +83,7 @@ while True:
         print("""
   Choose :
   [1] Encrypt text
-  [2] decode text (For this Session only)
+  [2] Decrypt text (For this Session only)
   [3] List all Encrypted texts
   [4] Exit
     """)
@@ -91,7 +91,7 @@ while True:
         choosen = input('Encrypt text >> ')
         Encrypt_text(choosen)
     elif choose == '2':
-        choosen = input('decode text >> ')
+        choosen = input('Decrypt text >> ')
         plainText = crypt.decryptStringENC(choosen)
         print(plainText)
     elif choose == '3':
